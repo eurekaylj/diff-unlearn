@@ -1,0 +1,16 @@
+Python >= 3.10
+numpy
+Pillow
+torch
+ftfy
+regex
+safetensors
+diffusers == 0.37.1
+transformers == 5.5.3
+
+Diffusion model computations use bundled source in code/local_diffusion.
+Installed diffusers/transformers supply configuration, model base classes,
+loading mixins, logging, backend utilities and tokenization.
+The bundled branch covers Stable Diffusion 2 UNet/VAE/DDIM/CLIP text encoder;
+other diffusion architectures and optional adapters are outside its scope.
+Pretrained weights and model configuration assets are not included.
